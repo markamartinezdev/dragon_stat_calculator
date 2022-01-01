@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>Dragon Tools: Stats</title>
+</head>
+
+<body>
+    <div id="gas-price">
+        <span id="fast"></span>
+        <span id="mid"></span>
+        <span id="slow"></span>
+    </div>
+
+
+    <form id="search-form">
+
+        <div id="search-form__top">
+            <input id="search-token" name="search-token" value="" placeholder="enter dragon/egg #" />
+            <button id="trigger">Get Stats</button>
+        </div>
+
+        <div id="search-type-selectors">
+            <div>
+                <input class="radio" type="radio" name="search-type" id="dragon-search" value="1" checked>
+                <label class="radio-label" for="dragon-search">Dragon</label>
+            </div>
+            <div>
+                <input class="radio" type="radio" name="search-type" id="egg-search" value="0">
+                <label class="radio-label" for="egg-search">Egg</label>
+            </div>
+        </div>
+    </form>
+
+    <section class="hide data-display" id="egg-calculation">
+        <section id="egg-image-wrapper" class="image-wrapper">
+            <a class="link" id="egg-link">View on Cryptodragons</a>
+            <img class='image' src="" alt="dragon egg" id="egg-image">
+        </section>
+        <section>
+            <h3>Is Hatched</h3>
+            <span id="hatched-value" class="value">0</span>
+
+            <h3>Type</h3>
+            <span id="egg-type" class="value"></span>
+        </section>
+    </section>
+
+
+    <section id="score-wrapper" class="hide data-display">
+        <section id="dragon-image-wrapper" class="image-wrapper">
+            <a class="link" id="dragon-link">View on Cryptodragons</a>
+            <img class="image" id="dragon-image" src="" alt="dragon-image" />
+            <span id="dragon-type"></span>
+        </section>
+        <section>
+            <h3>Arena Score</h3>
+            <span id="arena_score" class="value">0</span>
+
+            <h3>Average Score</h3>
+            <span id="avrege_score" class="value">0</span>
+
+            <h3>Physical Trait Average</h3>
+            <span id="physical_trait_score" class="value">0</span>
+        </section>
+    </section>
+
+    <section>
+        <a id="breed-link">Share the love! ;)</a>
+    </section>
+    <script src="../background_scripts/calculate.js"></script>
+</body>
+
+</html>

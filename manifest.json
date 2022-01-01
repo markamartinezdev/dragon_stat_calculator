@@ -1,0 +1,13 @@
+{
+  "name": "Dragon Stat Calculator",
+  "description": "Calculates the strength of a dragon",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["tabs"],
+  "action": {
+    "default_popup": "./interfaces/calculations.html"
+  },
+  "icons": {
+    "16": "./assets/chorizo_icon.png"
+  }
+}
